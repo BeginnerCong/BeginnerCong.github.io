@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-25T03:08:39.951Z</updated>
+  <updated>2019-11-25T03:09:28.992Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/11/25/nodejs%E5%AD%A6%E4%B9%A0/"/>
     <id>http://yoursite.com/2019/11/25/nodejs%E5%AD%A6%E4%B9%A0/</id>
     <published>2019-11-25T02:14:35.000Z</published>
-    <updated>2019-11-25T03:08:39.951Z</updated>
+    <updated>2019-11-25T03:09:28.992Z</updated>
     
     <content type="html"><![CDATA[<h4 id="一、nodejs下载"><a href="#一、nodejs下载" class="headerlink" title="一、nodejs下载"></a>一、nodejs下载</h4><p>下载nodejs，官网：<a href="http://nodejs.org/" target="_blank" rel="noopener">http://nodejs.org/</a></p><h4 id="二、nodejs安装"><a href="#二、nodejs安装" class="headerlink" title="二、nodejs安装"></a>二、nodejs安装</h4><p>下载完成之后，双击”nodejs安装文件”，开始安装nodejs，自定义安装在F:\nodejs下面。在cmd控制台输入：node -v，控制台将打印出：v10.16.0，出现版本提示表示安装成功。</p><h4 id="三、npm配置"><a href="#三、npm配置" class="headerlink" title="三、npm配置"></a>三、npm配置</h4><p>npm默认的仓库地址是在国外网站，速度较慢，建议大家设置到淘宝镜像。但是切换镜像是比较麻烦的。推荐一款切换镜像的工具：nrm</p><p>我们首先安装nrm，这里<code>-g</code>代表全局安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install nrm -g</span><br></pre></td></tr></table></figure><p>然后通过<code>nrm ls</code>命令查看npm的仓库列表,带*的就是当前选中的镜像仓库</p><p>通过<code>nrm use taobao</code>来指定要使用的镜像源</p><p>然后通过<code>nrm test npm</code>来测试速度</p>]]></content>
     
