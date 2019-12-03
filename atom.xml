@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beginnercong.github.io/"/>
-  <updated>2019-12-02T11:11:25.755Z</updated>
+  <updated>2019-12-03T12:14:30.848Z</updated>
   <id>http://beginnercong.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Eclipse中设置本地历史记录、代码找回</title>
+    <link href="http://beginnercong.github.io/2019/12/03/Eclipse%E4%B8%AD%E8%AE%BE%E7%BD%AE%E6%9C%AC%E5%9C%B0%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95%E3%80%81%E4%BB%A3%E7%A0%81%E6%89%BE%E5%9B%9E/"/>
+    <id>http://beginnercong.github.io/2019/12/03/Eclipse%E4%B8%AD%E8%AE%BE%E7%BD%AE%E6%9C%AC%E5%9C%B0%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95%E3%80%81%E4%BB%A3%E7%A0%81%E6%89%BE%E5%9B%9E/</id>
+    <published>2019-12-03T11:34:59.000Z</published>
+    <updated>2019-12-03T12:14:30.848Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Eclipse中设置本地历史记录、代码找回"><a href="#Eclipse中设置本地历史记录、代码找回" class="headerlink" title="Eclipse中设置本地历史记录、代码找回"></a>Eclipse中设置本地历史记录、代码找回</h3><h4 id="一、设置本地历史记录"><a href="#一、设置本地历史记录" class="headerlink" title="一、设置本地历史记录"></a>一、设置本地历史记录</h4><p>Window -&gt; Preferences -&gt; General -&gt; Workspace -&gt; Local History</p><img src="http://qiniu.cyspace.top/static/images/eclipse学习/1.png"><p>根据自己的情况进行设置，然后就可以从文件列表中直接打开本地历史记录，还集成了比较功能。</p><h4 id="二、代码找回"><a href="#二、代码找回" class="headerlink" title="二、代码找回"></a>二、代码找回</h4><p>SVN还原更新，本地代码没有提交，不小心代码被覆盖，代码如何找回</p><img src="http://qiniu.cyspace.top/static/images/eclipse学习/2.png"><p>Eclipse中文件或目录右键——&gt;replace with——&gt;local history,然后选择日期预览文件内容</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Eclipse中设置本地历史记录、代码找回&quot;&gt;&lt;a href=&quot;#Eclipse中设置本地历史记录、代码找回&quot; class=&quot;headerlink&quot; title=&quot;Eclipse中设置本地历史记录、代码找回&quot;&gt;&lt;/a&gt;Eclipse中设置本地历史记录、代码找回&lt;/
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>本地未安装oracle数据库使用PL/SQL连接服务器数据库</title>
