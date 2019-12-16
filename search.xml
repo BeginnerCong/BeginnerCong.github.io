@@ -3,7 +3,7 @@
   <entry>
     <title>MongoDB学习</title>
     <url>/2019/12/16/MongoDB%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h3 id="mongodb安装"><a href="#mongodb安装" class="headerlink" title="mongodb安装"></a>mongodb安装</h3><h4 id="mongodb介绍"><a href="#mongodb介绍" class="headerlink" title="mongodb介绍"></a>mongodb介绍</h4><img src="http://qiniu.cyspace.top/static/images/MongoDB学习/1.png">
+    <content><![CDATA[<h3 id="1-mongodb安装"><a href="#1-mongodb安装" class="headerlink" title="1 mongodb安装"></a>1 mongodb安装</h3><h4 id="mongodb介绍"><a href="#mongodb介绍" class="headerlink" title="mongodb介绍"></a>mongodb介绍</h4><img src="http://qiniu.cyspace.top/static/images/MongoDB学习/1.png">
 <h4 id="下载mongodb"><a href="#下载mongodb" class="headerlink" title="下载mongodb"></a>下载mongodb</h4><p>MongoDB 提供了可用于 32 位和 64 位系统的预编译二进制包，你可以从MongoDB官网下载安装。<br>官方下载地址：<a href="https://www.mongodb.com/download-center/community" target="_blank" rel="noopener">https://www.mongodb.com/download-center/community</a><br>本教程下载3.4版本：<a href="http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi" target="_blank" rel="noopener">http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi</a>  </p>
 <h4 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h4><p>运行 mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi  </p>
 <img src="http://qiniu.cyspace.top/static/images/MongoDB学习/2.png">
