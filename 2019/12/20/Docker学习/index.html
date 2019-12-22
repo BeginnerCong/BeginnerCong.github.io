@@ -66,7 +66,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;qiniu.cyspace.top&#x2F;static&#x2F;images&#x2F;docker学习&#x2F;10.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;qiniu.cyspace.top&#x2F;static&#x2F;images&#x2F;docker学习&#x2F;11.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;qiniu.cyspace.top&#x2F;static&#x2F;images&#x2F;docker学习&#x2F;12.png">
-<meta property="og:updated_time" content="2019-12-20T07:34:27.916Z">
+<meta property="og:updated_time" content="2019-12-22T11:21:34.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;qiniu.cyspace.top&#x2F;static&#x2F;images&#x2F;docker学习&#x2F;1.png">
 
@@ -316,12 +316,12 @@
 <p>可以看到镜像加速地址如下图：  </p>
 <img src="http://qiniu.cyspace.top/static/images/docker学习/8.png">
 <p>配置步骤:</p>
-<p>（1）编辑该文件：vi /etc/docker/daemon.json</p>
-<p>（2）在该文件中输入如下内容：</p>
+<p>(1)编辑该文件：vi /etc/docker/daemon.json</p>
+<p>(2)在该文件中输入如下内容：</p>
 <p>{</p>
 <p>​        “registry-mirrors”:  [“<a href="https://61b9q9w5.mirror.aliyuncs.com" target="_blank" rel="noopener">https://61b9q9w5.mirror.aliyuncs.com</a>“]</p>
 <p>}</p>
-<p>（3）注意：一定要重启docker服务</p>
+<p>(3)注意：一定要重启docker服务</p>
 <img src="http://qiniu.cyspace.top/static/images/docker学习/9.png">
 <h4 id="2-2-5-删除镜像"><a href="#2-2-5-删除镜像" class="headerlink" title="2.2.5 删除镜像"></a>2.2.5 删除镜像</h4><p>docker rmi $IMAGE_ID：删除指定镜像</p>
 <h3 id="2-3-docker容器操作"><a href="#2-3-docker容器操作" class="headerlink" title="2.3 docker容器操作"></a>2.3 docker容器操作</h3><h4 id="2-3-1-基本命令"><a href="#2-3-1-基本命令" class="headerlink" title="2.3.1 基本命令"></a>2.3.1 基本命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">查看正在运行容器:docker ps</span><br><span class="line">查看所有容器:docker ps -a</span><br><span class="line">查看最后一次运行的容器:docker ps -l</span><br><span class="line">查看停止的容器:docker ps -f status=exited</span><br><span class="line">进入容器,其中字符串为容器ID:docker exec -it 容器ID /bin/bash</span><br><span class="line">停用全部运行中的容器:docker stop $(docker ps -q)</span><br><span class="line">删除全部容器：docker rm $(docker ps -aq)</span><br><span class="line">一条命令实现停用并删除容器：docker stop $(docker ps -q) &amp; docker rm $(docker ps -aq)</span><br></pre></td></tr></table></figure>
