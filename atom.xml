@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beginnercong.github.io/"/>
-  <updated>2019-12-22T11:21:34.791Z</updated>
+  <updated>2019-12-30T05:25:01.022Z</updated>
   <id>http://beginnercong.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用JRebel实现SpringBoot热部署</title>
+    <link href="http://beginnercong.github.io/2019/12/30/%E4%BD%BF%E7%94%A8JRebel%E5%AE%9E%E7%8E%B0SpringBoot%E7%83%AD%E9%83%A8%E7%BD%B2/"/>
+    <id>http://beginnercong.github.io/2019/12/30/%E4%BD%BF%E7%94%A8JRebel%E5%AE%9E%E7%8E%B0SpringBoot%E7%83%AD%E9%83%A8%E7%BD%B2/</id>
+    <published>2019-12-30T02:16:47.000Z</published>
+    <updated>2019-12-30T05:25:01.022Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="使用JRebel实现SpringBoot热部署"><a href="#使用JRebel实现SpringBoot热部署" class="headerlink" title="使用JRebel实现SpringBoot热部署"></a>使用JRebel实现SpringBoot热部署</h3><a id="more"></a><h4 id="1、安装JRebel"><a href="#1、安装JRebel" class="headerlink" title="1、安装JRebel"></a>1、安装JRebel</h4><p>eclipse已经安装JRebel(如未安装，可以打开Help-&gt;Eclipse Marketplace搜索jrebel安装)</p><img src="http://qiniu.cyspace.top/static/images/JRebel/0.png"><h4 id="2、激活JRebel"><a href="#2、激活JRebel" class="headerlink" title="2、激活JRebel"></a>2、激活JRebel</h4><p>下载反向代理工具 <a href="https://github.com/ilanyu/ReverseProxy/releases/tag/v1.0" target="_blank" rel="noopener">下载地址</a>，我用的是如图所示那个</p><img src="http://qiniu.cyspace.top/static/images/JRebel/1.png"><p>下载完成后直接双击运行，出现如图所示命令窗口，就是启动成功了</p><img src="http://qiniu.cyspace.top/static/images/JRebel/2.png"><p>在eclipse中依次点击：Help-&gt;JRebel-&gt;Activation,打开下图界面选中第三项Connect to License Server，在第一栏中输入<a href="http://127.0.0.1:8888/GUID。" target="_blank" rel="noopener">http://127.0.0.1:8888/GUID。</a> 上面的GUID去这个<a href="https://www.guidgen.com/" target="_blank" rel="noopener">网站</a>生成然后复制过来就好了。</p><p>第二栏的邮箱随便填一个合法的就可以了。 然后点击Change license按钮就可以成功激活了，如图</p><img src="http://qiniu.cyspace.top/static/images/JRebel/3.png"><p>JRebel激活之后默认是联网使用的 , 在该模式下 , JRebel会一直联网监测激活信息 . 所以要调为离线使用的,依次点击Help -&gt; JRebel -&gt;Configuration，打开下面的页面，并且点击Work offline，出现下图所示信息就OK了，同时也可以关闭反向代理了，以后激活状态到期后，按照步骤再来一次就可以了</p><img src="http://qiniu.cyspace.top/static/images/JRebel/4.png"><h4 id="3、项目启用JRebel"><a href="#3、项目启用JRebel" class="headerlink" title="3、项目启用JRebel"></a>3、项目启用JRebel</h4><p>依次点击Help -&gt; JRebel -&gt;Configuration-&gt;Projects,配置方式如图步骤：</p><img src="http://qiniu.cyspace.top/static/images/JRebel/5.png"><img src="http://qiniu.cyspace.top/static/images/JRebel/6.png">]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;使用JRebel实现SpringBoot热部署&quot;&gt;&lt;a href=&quot;#使用JRebel实现SpringBoot热部署&quot; class=&quot;headerlink&quot; title=&quot;使用JRebel实现SpringBoot热部署&quot;&gt;&lt;/a&gt;使用JRebel实现SpringBoot热部署&lt;/h3&gt;
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="http://beginnercong.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Docker学习</title>
