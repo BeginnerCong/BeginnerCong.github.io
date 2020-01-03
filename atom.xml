@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beginnercong.github.io/"/>
-  <updated>2019-12-30T05:25:01.022Z</updated>
+  <updated>2020-01-03T03:50:33.061Z</updated>
   <id>http://beginnercong.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bootstrap Table表格信息过长显示省略号，鼠标悬停显示详细信(基于JeePlus平台)</title>
+    <link href="http://beginnercong.github.io/2020/01/03/Bootstrap%20Table%E8%A1%A8%E6%A0%BC%E4%BF%A1%E6%81%AF%E8%BF%87%E9%95%BF%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7%EF%BC%8C%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E6%98%BE%E7%A4%BA%E8%AF%A6%E7%BB%86%E4%BF%A1-%E5%9F%BA%E4%BA%8EJeePlus%E5%B9%B3%E5%8F%B0/"/>
+    <id>http://beginnercong.github.io/2020/01/03/Bootstrap%20Table%E8%A1%A8%E6%A0%BC%E4%BF%A1%E6%81%AF%E8%BF%87%E9%95%BF%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7%EF%BC%8C%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E6%98%BE%E7%A4%BA%E8%AF%A6%E7%BB%86%E4%BF%A1-%E5%9F%BA%E4%BA%8EJeePlus%E5%B9%B3%E5%8F%B0/</id>
+    <published>2020-01-03T03:20:49.000Z</published>
+    <updated>2020-01-03T03:50:33.061Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Bootstrap-Table表格信息过长显示省略号，鼠标悬停显示详细信-基于JeePlus平台"><a href="#Bootstrap-Table表格信息过长显示省略号，鼠标悬停显示详细信-基于JeePlus平台" class="headerlink" title="Bootstrap Table表格信息过长显示省略号，鼠标悬停显示详细信(基于JeePlus平台)"></a>Bootstrap Table表格信息过长显示省略号，鼠标悬停显示详细信(基于JeePlus平台)</h3><a id="more"></a><p>Bootstrap Table字段内容过多溢出，隐藏并显示省略号，鼠标停显示文本内容。</p><img src="http://qiniu.cyspace.top/static/images/BootstrapTable/0.png"><p>实现效果如上图所示。</p><h4 id="1、在Bootstrap-Table配置部分的columns里如下写"><a href="#1、在Bootstrap-Table配置部分的columns里如下写" class="headerlink" title="1、在Bootstrap Table配置部分的columns里如下写"></a>1、在Bootstrap Table配置部分的columns里如下写</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    field: &apos;address&apos;,</span><br><span class="line">    title: &apos;通讯地址&apos;,</span><br><span class="line">    sortable: true,</span><br><span class="line">    cellStyle: formatTableUnit,</span><br><span class="line">    formatter: paramsMatter,</span><br><span class="line">    sortName: &apos;address&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="2-定义方法"><a href="#2-定义方法" class="headerlink" title="2.定义方法:"></a>2.定义方法:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//表格超出宽度鼠标悬停显示td内容</span><br><span class="line">function paramsMatter(value,row,index, field) &#123;</span><br><span class="line"> var span=document.createElement(&apos;span&apos;);</span><br><span class="line"> if (typeof(value) == &quot;undefined&quot;)&#123;</span><br><span class="line">span.innerHTML = &apos;-&apos;;</span><br><span class="line">span.setAttribute(&apos;title&apos;,&apos;-&apos;);</span><br><span class="line"> &#125;else&#123;</span><br><span class="line">span.innerHTML = value;</span><br><span class="line">span.setAttribute(&apos;title&apos;,value);</span><br><span class="line"> &#125;</span><br><span class="line"> return span.outerHTML;</span><br><span class="line">&#125;</span><br><span class="line">//内容超过宽度隐藏</span><br><span class="line">function formatTableUnit(value, row, index)&#123;</span><br><span class="line"> return &#123;</span><br><span class="line"> css: &#123;</span><br><span class="line">             &quot;white-space&quot;: &apos;nowrap&apos;,</span><br><span class="line">             &quot;text-overflow&quot;: &apos;ellipsis&apos;,</span><br><span class="line">             &quot;overflow&quot;: &apos;hidden&apos;,</span><br><span class="line">             &quot;max-width&quot;:&quot;150px&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Bootstrap-Table表格信息过长显示省略号，鼠标悬停显示详细信-基于JeePlus平台&quot;&gt;&lt;a href=&quot;#Bootstrap-Table表格信息过长显示省略号，鼠标悬停显示详细信-基于JeePlus平台&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap Table表格信息过长显示省略号，鼠标悬停显示详细信(基于JeePlus平台)&quot;&gt;&lt;/a&gt;Bootstrap Table表格信息过长显示省略号，鼠标悬停显示详细信(基于JeePlus平台)&lt;/h3&gt;
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="http://beginnercong.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>使用JRebel实现SpringBoot热部署</title>
